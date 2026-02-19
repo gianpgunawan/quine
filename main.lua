@@ -1,0 +1,1 @@
+local src = "local src = ? for i=1,#src do if (string.byte(src, i, i) == 63) then io.write(string.char(34) .. src .. string.char(34)) else io.write(src:sub(i, i)) end end" for i=1,#src do if (string.byte(src, i, i) == 63) then io.write(string.char(34) .. src .. string.char(34)) else io.write(src:sub(i, i)) end end
